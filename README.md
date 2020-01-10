@@ -11,10 +11,10 @@ do curso **[Criação de Apps Android e iOS com Flutter - Crie 16 Apps](https://
 ****
 ### **Explicação App**
 
-O aplicativo tem por finalidade fazer a contagem de pessoas, que ao apertar no botões
+O aplicativo tem por finalidade fazer a contagem de pessoas, que ao apertar nos botões
 **+1** e **-1** vai aumentando e diminuindo.
 
-* Quando está em **0 Pessoas** ele diz que pode entrar, já que ainda tem espaço de pessoas
+* Quando está em **0 Pessoas** ele diz que pode entrar, já que ainda tem espaço de pessoas.
 
 * Quando está a cima de **10 Pessoas** foi estipulado que o lugar estaria cheio, e não suportaria tantas pessoas assim no estabelecimento.
 
@@ -27,7 +27,7 @@ O aplicativo tem por finalidade fazer a contagem de pessoas, que ao apertar no b
 
 Agora terá explicação das variáveis utilizadas.
 
-* **`String _info`**  : variáve privada de controle, onde se fosse as condições sitadas a cima, ele mudaria o comportamento dentro do aplicativo, dizendo lotado, Alien ?? ou que pode entrar.
+* **`String _info`**  : variável privada de controle, onde se fosse as condições citadas a cima, ele mudaria o comportamento dentro do aplicativo, dizendo lotado, Alien ?? ou que pode entrar.
 
 
 * **`String _generoInfo`** : variável privada que controla se a palavra escrita era **Pessoa:** ou **Pessoas:**.
@@ -36,7 +36,7 @@ Agora terá explicação das variáveis utilizadas.
 
 ### **Método**
 
-Agora terá explicação da função utilizada para controle do aplicativo.
+Agora terá explicação da método utilizada para controle do aplicativo.
 
 
 ```
@@ -60,7 +60,7 @@ void _change(delta) {
 }
 ```
 
-* **void _change(delta)** : um método privado do tipo void, que faz a checagem de tudo. Quando é pressionado o botão **01** ou **-1**, ele faz o incremento ou decremento do número de pessoas, mudando o stado da variável **_peoples**.
+* **void _change(delta)** : um método privado do tipo void, que faz a checagem de tudo. Quando é pressionado o botão **+1** ou **-1**, ele faz o incremento ou decremento do número de pessoas, mudando o estado da variável **_peoples**.
 
 O método faz o controle das condições, onde:
 
@@ -102,15 +102,15 @@ else {
 
 ## **Widgets Utilizados**
 
-Agora será mostrado os widgets do flutter que foi utilizado para compor essa simples aplicação:
+Agora será mostrado os widgets do flutter que foram utilizados para compor essa simples aplicação:
 
 * **Stack**: utilizado para colocar elementos a cima do outro, por utilizar uma imagem de fundo, foi necessário.
 
-* **Column**: utilizado a coluna para alinha todos os demais filhos, pois a aplicação demandava desse tipo de layout.
+* **Column**: utilizado a coluna para alinhar todos os demais filhos, pois a aplicação demandava desse tipo de layout.
 
 * **Text**: utilizado dois Text, para colocar as frases: Pessoas: 0, e o: Pode Entrar.
 
-* **Padding**: utilizado para dar espaçamento entre os **FlatButtons*, para que não ficassem colados
+* **Padding**: utilizado para dar espaçamento entre os **FlatButtons**, para que não ficassem colados.
 
 * **FlatButtons**: utilizado para receber interação do usuário, no caso foi necessário utilizar dois, o: **+1** e o **-1**.
 
