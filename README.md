@@ -1,4 +1,4 @@
-# Contador_de_pessoas
+# Contador de pessoas
 
 Projeto feito totalmente em flutter, framework da linguagem dart.
 
