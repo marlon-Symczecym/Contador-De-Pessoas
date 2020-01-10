@@ -27,29 +27,78 @@ O aplicativo tem por finalidade fazer a contagem de pessoas, que ao apertar no b
 
 Agora terá explicação das variáveis utilizadas.
 
-* **String _info** : variáve privada de controle, onde se fosse as condições sitadas a cima, ele mudaria o comportamento dentro do aplicativo, dizendo lotado, Alien ?? ou que pode entrar.
+* **`String _info`**  : variáve privada de controle, onde se fosse as condições sitadas a cima, ele mudaria o comportamento dentro do aplicativo, dizendo lotado, Alien ?? ou que pode entrar.
 
-* **String _generoInfo** : variável privada que controla se a palavra escrita era **Pessoa:** ou **Pessoas:**.
 
-* **int _peoples** : variável privada que controla quantos cliques houve no botão, fazendo o incremento de +1 ou decremento de -1.
+* **`String _generoInfo`** : variável privada que controla se a palavra escrita era **Pessoa:** ou **Pessoas:**.
+
+* **`int _peoples`** : variável privada que controla quantos cliques houve no botão, fazendo o incremento de +1 ou decremento de -1.
 
 ### **Método**
 
 Agora terá explicação da função utilizada para controle do aplicativo.
 
+
+```
+void _change(delta) {
+    setState(() {
+      _peoples += delta;
+
+      if(_peoples < 0) {
+        _info = "Aliens ??";
+        _generoInfo = "Aliens:";
+      }else if(_peoples == 0) {
+        _info = "Pode Entrar";
+        _generoInfo = "Pessoa:";
+      }else if( _peoples > 10) {
+        _info = "Lotado";
+      }else {
+        _info = "Pode Entrar";
+        _generoInfo = "Pessoas:";
+      }
+    });
+}
+```
+
 * **void _change(delta)** : um método privado do tipo void, que faz a checagem de tudo. Quando é pressionado o botão **01** ou **-1**, ele faz o incremento ou decremento do número de pessoas, mudando o stado da variável **_peoples**.
 
 O método faz o controle das condições, onde:
 
-* **SE** **_peoples** for **MENOR** que 0, a variável **_info** irá dizer: Aliens ?? e a variável **_generoInfo** irá dizer: Aliens:.
+* **SE** **_peoples** for **MENOR** que 0, a variável **_info** irá dizer: Aliens ?? e a variável **_generoInfo** irá dizer: Aliens:
+
+```
+if(_peoples < 0) {
+        _info = "Aliens ??";
+        _generoInfo = "Aliens:";
+}
+```
 
 * **SENAO SE** **_peoples** for **IGUAL** a 0, a variável **_info** irá dizer: Pode Entrar e a variável **_generoInfo** irá dizer: Pessoa:.
 
-* **SENAO SE** **_peoples** for **IGUAL** a 0, a variável **_info** irá dizer: Pode Entrar e a variável **_generoInfo** irá dizer: Pessoa:.
+```
+else if(_peoples == 0) {
+        _info = "Pode Entrar";
+        _generoInfo = "Pessoa:";
+}
+```
 
 * **SENAO SE** **_peoples** for **MAIOR** que 10, a variável **_info** irá dizer: Lotado e a variável **_generoInfo** irá dizer: Pessoas:.
+```
+else if( _peoples > 10) {
+        _info = "Lotado";
+}
+```
 
 * **SENAO** for nenhuma das outras condicões, a variável **_info** irá dizer: Pode Entrar e a variável **_generoInfo** irá dizer: Pessoas:.
+
+```
+else {
+        _info = "Pode Entrar";
+        _generoInfo = "Pessoas:";
+      }
+    });
+}
+```
 
 ## **Widgets Utilizados**
 
