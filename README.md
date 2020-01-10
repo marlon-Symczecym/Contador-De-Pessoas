@@ -37,7 +37,7 @@ Agora terá explicação das variáveis utilizadas.
 
 Agora terá explicação da função utilizada para controle do aplicativo.
 
-* **void _chanve(delta)** : um método privado do tipo void, que faz a checagem de tudo. Quando é pressionado o botão **01** ou **-1**, ele faz o incremento ou decremento do número de pessoas, mudando o stado da variável **_peoples**.
+* **void _change(delta)** : um método privado do tipo void, que faz a checagem de tudo. Quando é pressionado o botão **01** ou **-1**, ele faz o incremento ou decremento do número de pessoas, mudando o stado da variável **_peoples**.
 
 O método faz o controle das condições, onde:
 
