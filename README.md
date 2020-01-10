@@ -110,7 +110,7 @@ Agora será mostrado os widgets do flutter que foi utilizado para compor essa si
 
 * **Text**: utilizado dois Text, para colocar as frases: Pessoas: 0, e o: Pode Entrar.
 
-* **Padding**: utilizado para dar espaçamento entre os **FaltButtons*, para que não ficassem colados
+* **Padding**: utilizado para dar espaçamento entre os **FlatButtons*, para que não ficassem colados
 
 * **FlatButtons**: utilizado para receber interação do usuário, no caso foi necessário utilizar dois, o: **+1** e o **-1**.
 
