@@ -1,16 +1,77 @@
-# contador_de_pessoas
+# Contador_de_pessoas
 
-A new Flutter project.
+Projeto feito totalmente em flutter, framework da linguagem dart.
 
-## Getting Started
+## **Intuito**
 
-This project is a starting point for a Flutter application.
+O intuito do projeto era exercitar o conteúdo já aprendido nos primeiros módulos
+do curso **[Criação de Apps Android e iOS com Flutter - Crie 16 Apps](https://www.udemy.com/course/curso-completo-flutter-app-android-ios/?couponCode=FLUTTER12192)** do professor Daniel Ciolfi.
 
-A few resources to get you started if this is your first Flutter project:
+****
+****
+### **Explicação App**
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+O aplicativo tem por finalidade fazer a contagem de pessoas, que ao apertar no botões
+**+1** e **-1** vai aumentando e diminuindo.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Quando está em **0 Pessoas** ele diz que pode entrar, já que ainda tem espaço de pessoas
+
+* Quando está a cima de **10 Pessoas** foi estipulado que o lugar estaria cheio, e não suportaria tantas pessoas assim no estabelecimento.
+
+* Quando está com quantidade **negativa** de pessoas, teve uma brincadeira feita, dizendo: **Aliens ??**
+
+****
+### **Explicação Código**
+
+### **Variáveis**
+
+Agora terá explicação das variáveis utilizadas.
+
+* **String _info** : variáve privada de controle, onde se fosse as condições sitadas a cima, ele mudaria o comportamento dentro do aplicativo, dizendo lotado, Alien ?? ou que pode entrar.
+
+* **String _generoInfo** : variável privada que controla se a palavra escrita era **Pessoa:** ou **Pessoas:**.
+
+* **int _peoples** : variável privada que controla quantos cliques houve no botão, fazendo o incremento de +1 ou decremento de -1.
+
+### **Método**
+
+Agora terá explicação da função utilizada para controle do aplicativo.
+
+* **void _chanve(delta)** : um método privado do tipo void, que faz a checagem de tudo. Quando é pressionado o botão **01** ou **-1**, ele faz o incremento ou decremento do número de pessoas, mudando o stado da variável **_peoples**.
+
+O método faz o controle das condições, onde:
+
+* **SE** **_peoples** for **MENOR** que 0, a variável **_info** irá dizer: Aliens ?? e a variável **_generoInfo** irá dizer: Aliens:.
+
+* **SENAO SE** **_peoples** for **IGUAL** a 0, a variável **_info** irá dizer: Pode Entrar e a variável **_generoInfo** irá dizer: Pessoa:.
+
+* **SENAO SE** **_peoples** for **IGUAL** a 0, a variável **_info** irá dizer: Pode Entrar e a variável **_generoInfo** irá dizer: Pessoa:.
+
+* **SENAO SE** **_peoples** for **MAIOR** que 10, a variável **_info** irá dizer: Lotado e a variável **_generoInfo** irá dizer: Pessoas:.
+
+* **SENAO** for nenhuma das outras condicões, a variável **_info** irá dizer: Pode Entrar e a variável **_generoInfo** irá dizer: Pessoas:.
+
+## **Widgets Utilizados**
+
+Agora será mostrado os widgets do flutter que foi utilizado para compor essa simples aplicação:
+
+* **Stack**: utilizado para colocar elementos a cima do outro, por utilizar uma imagem de fundo, foi necessário.
+
+* **Column**: utilizado a coluna para alinha todos os demais filhos, pois a aplicação demandava desse tipo de layout.
+
+* **Text**: utilizado dois Text, para colocar as frases: Pessoas: 0, e o: Pode Entrar.
+
+* **Padding**: utilizado para dar espaçamento entre os **FaltButtons*, para que não ficassem colados
+
+* **FlatButtons**: utilizado para receber interação do usuário, no caso foi necessário utilizar dois, o: **+1** e o **-1**.
+
+# **Print da Aplicação**
+
+Agora será mostrado como ficou a aplicação, utilizando layout passado pelo professor Daniel:
+
+![Print App](src/imageScreen.jpg)
+
+****
+****
+
+**Agradeço por terem acompanhdo o post todo e a explicação, e trarei mais projetos.**
